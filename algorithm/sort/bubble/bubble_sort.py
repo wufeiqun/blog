@@ -10,7 +10,7 @@ def bubble_sort(array):
                 array[j], array[j+1] = array[j+1], array[j]
                 exchange = True
         if not exchange:
-            return array
+            break
     return array
 
 array  = [9,8,7,6,5,4,3,2,1]
