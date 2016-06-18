@@ -32,8 +32,8 @@ if __name__ == "__main__":
     start = time.time()
     #array = [x for x in xrange(1000, 0, -1)]
     array = []
-    for i in xrange(100000):
-        array.append(random.randint(0, 1000000))
+    for i in xrange(1000000):
+        array.append(random.randint(0, 10000000))
     pool = Pool(8)
     pool.map_async(bubble_sort_a, array)
     #bubble_sort_a(array)
