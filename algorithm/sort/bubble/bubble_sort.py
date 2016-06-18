@@ -2,7 +2,7 @@
 #coding:utf-8
 import time
 import random
-from multiprocessing import Pool
+
 #默认版本
 #比如[5,4,3,2,1],第一趟比较的时候,需要获取的索引的范围为0,1,2,3.
 def bubble_sort_a(array):
@@ -32,10 +32,8 @@ if __name__ == "__main__":
     start = time.time()
     #array = [x for x in xrange(1000, 0, -1)]
     array = []
-    for i in xrange(9000000):
-        array.append(random.randint(0, 10000000))
-    pool = Pool(8)
-    pool.map_async(bubble_sort_a, array)
+    for i in xrange(9000):
+        array.append(random.randint(0, 10000))
     #bubble_sort_a(array)
     # bubble_sort_b(array)
     end = time.time()
