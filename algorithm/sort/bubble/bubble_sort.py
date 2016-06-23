@@ -36,6 +36,8 @@ if __name__ == "__main__":
         array.append(random.randint(0, 10000000))
     pool = Pool(8)
     pool.map_async(bubble_sort_a, array)
+    pool.close()
+    pool.join()
     #bubble_sort_a(array)
     # bubble_sort_b(array)
     end = time.time()
