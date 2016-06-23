@@ -2,10 +2,10 @@
 #coding:utf-8
 import time
 import random
-from multiprocessing import Pool
+
 #默认版本
 #比如[5,4,3,2,1],第一趟比较的时候,需要获取的索引的范围为0,1,2,3.
-def bubble_sort_a(array):
+def bubble_default(array):
     n = len(array)              # 获取数组长度
     for i in range(1,n):        # 总共需要比较n-1趟
         for j in range(n-i):    # 当比较第i趟的时候,需要遍历索引从0到n-i-1.
@@ -16,7 +16,7 @@ def bubble_sort_a(array):
 # 优化版本一,每一趟比较开始的时候设置一个变量,当这一趟有交换发生的时候,变量改变,当没有交换发生
 # 的时候,变量不变,当这一趟比较完成的时候,根据变量来判断这一趟是否有交换,如果没有交换则代表已经
 # 排序完成,退出循环,这样可以不用做一些无用的比较.
-def bubble_sort_b(array):
+def bubble_flag(array):
     n = len(array)
     for i in range(1,n):
         exchange = 0
@@ -29,6 +29,7 @@ def bubble_sort_b(array):
     return array
 
 if __name__ == "__main__":
+<<<<<<< HEAD:algorithm/sort/bubble/bubble_sort.py
     start = time.time()
     #array = [x for x in xrange(1000, 0, -1)]
     array = []
@@ -42,3 +43,8 @@ if __name__ == "__main__":
     # bubble_sort_b(array)
     end = time.time()
     print "Using %0.2fs." % (end - start)
+=======
+    array = [x for x in xrange(10, 0, -1)]
+    print bubble_default(array)
+    print bubble_flag(array)
+>>>>>>> b12ce686f067634f9326f3abfd3a5c42cbe70b9d:algorithm/sort/bubble/bubble.py
