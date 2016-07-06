@@ -29,22 +29,6 @@ def bubble_flag(array):
     return array
 
 if __name__ == "__main__":
-<<<<<<< HEAD:algorithm/sort/bubble/bubble_sort.py
-    start = time.time()
-    #array = [x for x in xrange(1000, 0, -1)]
-    array = []
-    for i in xrange(9000000):
-        array.append(random.randint(0, 10000000))
-    pool = Pool(8)
-    pool.map_async(bubble_sort_a, array)
-    pool.close()
-    pool.join()
-    #bubble_sort_a(array)
-    # bubble_sort_b(array)
-    end = time.time()
-    print "Using %0.2fs." % (end - start)
-=======
     array = [x for x in xrange(10, 0, -1)]
     print bubble_default(array)
     print bubble_flag(array)
->>>>>>> b12ce686f067634f9326f3abfd3a5c42cbe70b9d:algorithm/sort/bubble/bubble.py
