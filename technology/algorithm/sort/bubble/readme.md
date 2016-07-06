@@ -67,4 +67,9 @@ http://student.zjzk.cn/course_ware/data_structure/web/flashhtml/maopaopaixu.htm
 
 ---
 
- > 冒泡排序为交换排序,原地排序,并且是稳定的排序算法.
+
+
+
+
+---  
+<img style="transform:rotate(90deg);;" src="https://raw.githubusercontent.com/hellorocky/blog/master/picture/2.bubble_sort.jpg">
