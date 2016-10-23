@@ -1,11 +1,3 @@
-title: 高效Mac开发配置指南oh-my-zsh篇
-date: 2015-11-22 13:44:21
-commons: true
-categories: 开发工具
-tags: [oh-my-zsh, 工具配置]
-description: oh-my-zsh配置总结
----
-
 > 工欲善其事，必先利其器
 
 ## 前言
