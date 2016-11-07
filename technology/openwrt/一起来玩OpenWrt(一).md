@@ -25,3 +25,9 @@ src/gz telephony http://openwrt.proxy.ustclug.org/chaos_calmer/15.05.1/ramips/mt
 ```
 
 可以通过查看`/proc/cpuinfo`来确定cpu类型和架构
+
+#### 安装shadowsocks系列软件
+
+&emsp;软件源在`http://openwrt-dist.sourceforge.net/releases/ramips/packages/`, 把自己需要的软件下载到本机电脑然后scp到路由器/tmp目录,然后安装即可:
+
+* 尽量使用命令行,如果不必要尽量不使用图形界面.
