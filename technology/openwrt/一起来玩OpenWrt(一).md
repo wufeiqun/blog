@@ -28,6 +28,28 @@ src/gz telephony http://openwrt.proxy.ustclug.org/chaos_calmer/15.05.1/ramips/mt
 
 #### 安装shadowsocks系列软件
 
-&emsp;软件源在`http://openwrt-dist.sourceforge.net/releases/ramips/packages/`, 把自己需要的软件下载到本机电脑然后scp到路由器/tmp目录,然后安装即可:
+&emsp;从`openwrt-dist`下载需要的软件到本机电脑然后scp到路由器/tmp目录,然后安装即可:
 
+```
+opkg install shadowsocks*.ipk
+```
+
+openwrt自带的dnsmasq软件不具有ipset功能,先卸载自带的然后从opkg仓库安装:
+
+```
+opkg remove dnsmasq
+opkg install dnsmasq-full
+```
+
+
+#### 总结体会
 * 尽量使用命令行,如果不必要尽量不使用图形界面.
+
+#### 参考链接
+[openwrt-dist](http://openwrt-dist.sourceforge.net/)
+
+[清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/)
+
+[中科大开源软件镜像站](https://mirrors.ustc.edu.cn/)
+
+
