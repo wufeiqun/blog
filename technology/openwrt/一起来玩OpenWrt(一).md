@@ -34,12 +34,16 @@ src/gz telephony http://openwrt.proxy.ustclug.org/chaos_calmer/15.05.1/ramips/mt
 opkg install shadowsocks*.ipk
 ```
 
-openwrt自带的dnsmasq软件不具有ipset功能,先卸载自带的然后从opkg仓库安装:
+#### 安装dnsmasq-full
+
+Dnsmasq是一个开源的轻量级DNS转发和DHCP、TFTP服务器，使用C语言编写。Dnsmasq针对家庭局域网等小型局域网设计，资源占用低，易于配置。openwrt自带的dnsmasq软件不具有ipset功能,如果想要根据域名来判断是否翻墙的话使用ipset版本的dnsmasq会更加高效,因为它支持把每一个解析成功的域名的IP保存到一个ipset的数据结构中,然后配置iptables规则即可,先卸载自带的dnsmasq然后从opkg仓库安装:
 
 ```
 opkg remove dnsmasq
 opkg install dnsmasq-full
 ```
+因为根据IP比根据域名判断是否翻墙更可靠,所以我没有用到dnsmasq的ipset功能,仅仅使用了它的DHCP和DNS缓存功能;
+具体配置请参考[代码](https://github.com/hellorocky/LearnByCoding/tree/master/configuration/shadowsocks)
 
 
 #### 总结体会
