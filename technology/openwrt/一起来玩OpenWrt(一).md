@@ -52,6 +52,8 @@ opkg install dnsmasq-full
 #### 参考链接
 [openwrt-dist](http://openwrt-dist.sourceforge.net/)
 
+[aa65535/bintray](https://bintray.com/aa65535)
+
 [清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/)
 
 [中科大开源软件镜像站](https://mirrors.ustc.edu.cn/)
