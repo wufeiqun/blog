@@ -105,3 +105,6 @@ DNS只有两种报文：查询报文、回答报文，两者有着相同格式�
  * rcode是一个返回码字段,通常为0(没有差错)和3(名字差错)
 
  对于查询报文，问题(question)数通常是1，而其他3项则均为0。类似地，对于应答报文，回答数至少是1，剩下的两项可以是0或非0。
+ 
+ ![](https://raw.githubusercontent.com/hellorocky/blog/master/picture/14.DNS_question.png)
+ 
