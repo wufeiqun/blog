@@ -83,4 +83,7 @@ rockywu.me.		3600	IN	NS	lv3ns3.ffdns.net.
 
 #### 具体请求回应报文
 
-DNS只有两种报文：查询报文、回答报文，两者有着相同格式，如下：
+DNS只有两种报文：查询报文、回答报文，两者有着相同格式，这个报文由12字节长的首部和4个长度可变的字段组成 。如下：
+
+![dns_header](https://raw.githubusercontent.com/hellorocky/blog/master/picture/11.dns_header.png)
+
