@@ -124,3 +124,15 @@ DNS只有两种报文：查询报文、回答报文，两者有着相同格式�
 &emsp;DNS报文的后面3个字段: 回答字段, 授权字段, 和附加信息字段一般出现在响应报文中,均采用一种称为资源记录值RR(Resource Record)的相同格式,如下图:
 
 ![](https://raw.githubusercontent.com/hellorocky/blog/master/picture/15.RR.png)
+
+![](https://raw.githubusercontent.com/hellorocky/blog/master/picture/16.DNS_resp.png)
+
+* 域名就是要查询的域名
+* 类型为`A`,说明要查询的是IPv4地址
+* 类通常为1,表明是互联网
+* 生存时间是客户端程序保留该资源记录的秒数,资源记录通常为2天,这里为471秒
+* 资源数据长度,如果为IPv4的话就是4个字节
+* 资源数据,这就是客户端要的IPv4地址了
+
+
+到此一个完整的DNS请求/响应完成了,
