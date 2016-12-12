@@ -121,4 +121,6 @@ DNS只有两种报文：查询报文、回答报文，两者有着相同格式�
 
 #### 响应报文
 
-&emsp;DNS报文的后面3个字段: 回答字段, 授权字段, 和附加信息字段一般出现在响应报文中,均采用一种称为资源记录值RR(Resource Record)的相同格式.
+&emsp;DNS报文的后面3个字段: 回答字段, 授权字段, 和附加信息字段一般出现在响应报文中,均采用一种称为资源记录值RR(Resource Record)的相同格式,如下图:
+
+![](https://raw.githubusercontent.com/hellorocky/blog/master/picture/15.RR.png)
