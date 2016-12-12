@@ -87,9 +87,21 @@ DNS只有两种报文：查询报文、回答报文，两者有着相同格式�
 
 ![dns_header](https://raw.githubusercontent.com/hellorocky/blog/master/picture/11.dns_header.png)
 
-![](https://raw.githubusercontent.com/hellorocky/blog/master/picture/12.dns_header_marked.png)
+![2](https://raw.githubusercontent.com/hellorocky/blog/master/picture/12.dns_header_marked.png)
+
+![3](https://raw.githubusercontent.com/hellorocky/blog/master/picture/13.DNS_Header_flag.png)
 
 下面说说首部区域:
 
 1. 标识字段由客户程序设置,并由服务器返回结果,客户端请求报文和服务端返回的报文的该字段的值是相同的,客户端通过它来确定响应与查询是否是同一个.
-2. 16bit的标志字段被划分为若干子字段
+2. 16bit的标志字段被划分为若干子字段,如上图3,下面依次介绍:
+ * QR字段: 0表示查询报文, 1表示响应报文
+ * opcode字段: 通常值为0(标准查询), 1(反向查询), 2(服务器状态请求)
+ * AA字段表示`授权回答(authoritative answer)`,用于响应头部,如果为1,则表示该DNS服务器就是查询域名的官方NameServer,如果为0则不是.
+ * TC字段表示是否可截断,使用UDP时,1表示截断,0表示没有截断,如果响应的总长度超过512字节时,只返回前512字节
+ * RD表示`期望递归(recursion desired)`,1代表使用递归的方式,告诉DNS服务器必须处理这个查询,如果DNS服务器没有就往上游抛,如果为0的话,表示告诉DNS服务器使用迭代的方式查询,如果DNS服务器不是该域名的授权服务器,那么DNS服务器就返回一个能解答该查询的其它名称服务器.一般如果是客户端比如PC,手机等的话使用递归的请求方式,如果是本地DNS,比如114DNS,向上游查询的话一般使用迭代的查询方式.
+ * RA只能在响应报文中置为1，表示可以得到递归响应。大多数名字服务器都提供递归查询，除了某些根服务器。
+ * 随后的3个bit必须为0
+ * rcode是一个返回码字段,通常为0(没有差错)和3(名字差错)
+
+ 对于查询报文，问题(question)数通常是1，而其他3项则均为0。类似地，对于应答报文，回答数至少是1，剩下的两项可以是0或非0。
