@@ -61,6 +61,26 @@ def stop():
         print "MaxScale is already STOPPED..."
         sys.exit(0)
 
+def restart():
+    print "Checking MaxScale Status..."
+    ret = check()
+    if ret == 0:
+        print "MaxScale is RUNNING..."
+        print "Stopping MaxScale..."
+        cmd = base_cmd + "stop maxscale"
+        run_cmd(cmd)
+        print "MaxScale Stopped..."
+    print "Restarting MaxScale..."
+    cmd = base_cmd + "start maxscale"
+    ret = run_cmd(cmd)
+    if "started" in ret[1][0]:
+        print "MaxScale Started..."
+        sys.exit(0)
+    else:
+        print "MaxScale Started Failed..."
+        sys.exit(1)
+
+
 if __name__ == "__main__":
     if len(sys.argv) == 2:
         if sys.argv[1] == "start":
@@ -70,8 +90,7 @@ if __name__ == "__main__":
         elif sys.argv[1]  == "status":
             status()
         elif sys.argv[1] in ["restart", "reload"]:
-            stop()
-            start()
+            restart()
         else:
             print "python maxscale.py start|stop|status|restart|reload"
     else:
