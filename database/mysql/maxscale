@@ -1,97 +1,38 @@
-#!/home/qfpay/python/bin/python
-# coding: utf-8
-import os
-import sys
-import subprocess
+#!/bin/bash
+sctl='/home/qfpay/superctl'
 
+start () {
+    $sctl start maxscale && return 0 || return 1
+}
 
-#############################################
-# MaxScale PIDFILE
-#############################################
-maxscale_pidfile = "/home/qfpay/maxscale/maxscale.pid"
-base_cmd = "/home/qfpay/pyenv/bin/supervisorctl -c /home/qfpay/pyenv/etc/supervisord.conf "
-#base_cmd = "/home/qfpay/supervisor/bin/supervisorctl -c /home/qfpay/supervisor/conf/supervisord.conf "
+stop () {
+    $sctl stop maxscale && return 0 || return 1
+}
 
-def run_cmd(cmd):
-    p = subprocess.Popen(cmd.split(), stdout=subprocess.PIPE)
-    p.wait()
-    return p.returncode, p.stdout.readlines()
-
-def check():
-    # 检查maxscale的supervisor状态
-    cmd = base_cmd + "status maxscale"
-    ret = run_cmd(cmd)
-    if "RUNNING" in ret[1][0]:
+status () {
+    /home/qfpay/mariadb/bin/mysql -h127.0.0.1 -utest -ptest -e "select 1;" > /dev/null
+    ret=$?
+    if [ $ret -eq 0 ]
+    then
         return 0
-    else:
+    else
         return 1
+    fi
+}
 
-def status():
-    print "Checking MaxScale Status..."
-    ret = check()
-    if ret == 0:
-        print "MaxScale is RUNNING..."
-        sys.exit(0)
-    else:
-        print "MaxScale is not RUNNING..."
-        sys.exit(1)
-
-def start():
-    print "Starting MaxScale..."
-    ret = check()
-    if ret == 0:
-        print "MaxScale is already RUNNING..."
-        sys.exit(0)
-    else:
-        cmd = base_cmd + "start maxscale"
-        ret = run_cmd(cmd)
-        if "started" in ret[1][0]:
-            sys.exit(0)
-        else:
-            sys.exit(1)
-
-def stop():
-    print "Stopping MaxScale..."
-    ret = check()
-    if ret == 0:
-        cmd = base_cmd + "stop maxscale"
-        run_cmd(cmd)
-        sys.exit(0)
-    else:
-        print "MaxScale is already STOPPED..."
-        sys.exit(0)
-
-def restart():
-    print "Checking MaxScale Status..."
-    ret = check()
-    if ret == 0:
-        print "MaxScale is RUNNING..."
-        print "Stopping MaxScale..."
-        cmd = base_cmd + "stop maxscale"
-        run_cmd(cmd)
-        print "MaxScale Stopped..."
-    print "Restarting MaxScale..."
-    cmd = base_cmd + "start maxscale"
-    ret = run_cmd(cmd)
-    if "started" in ret[1][0]:
-        print "MaxScale Started..."
-        sys.exit(0)
-    else:
-        print "MaxScale Started Failed..."
-        sys.exit(1)
-
-
-if __name__ == "__main__":
-    if len(sys.argv) == 2:
-        if sys.argv[1] == "start":
-            start()
-        elif sys.argv[1] == "stop":
-            stop()
-        elif sys.argv[1]  == "status":
-            status()
-        elif sys.argv[1] in ["restart", "reload"]:
-            restart()
-        else:
-            print "python maxscale.py start|stop|status|restart|reload"
-    else:
-        print "python maxscale.py start|stop|status|restart|reload"
+case "$1" in
+    start)
+        start
+        status
+    ;;
+    stop)
+        stop
+    ;;
+    status)
+        status
+    ;;
+    restart)
+        stop
+        start
+    ;;
+esac
