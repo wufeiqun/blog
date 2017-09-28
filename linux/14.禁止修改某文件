@@ -1,0 +1,18 @@
+#### 背景介绍
+
+&emsp;工作中经常会跟同事共用一个开发环境或者机器, 有时候害怕同事不小心把自己的某些文件给删除了, 特别是重要服务的配置文件, 这个时候可以给文件加一个属性, 禁止修改文件内容, 使用如下命令:
+
+```
+[root@MyCloudServer]#chattr +i test.txt
+
+[root@MyCloudServer]# lsattr test.txt
+----i----------- test.txt
+```
+
+这样的话,谁都不可以修改和删除了, 去掉的命令如下:
+
+```
+[root@MyCloudServer]#chattr -i test.txt
+```
+
+
