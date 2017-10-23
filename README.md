@@ -1,49 +1,129 @@
-# 我的博客
+#### 我的博客
 
-&emsp;从入行以来就开始折腾博客, 从CSDN到博客园, 后来又折腾HEXO, 都感觉不爽, 要不就是有点麻烦, 索性只接受用github当做自己的博客吧, 直接书写markdown文件就行, 下面👇是博客的索引.
+---
+#### paramiko
 
-#### 算法和数据结构
+* [paramiko多线程执行命令总结](https://github.com/hellorocky/blog/blob/master/paramiko/1.paramiko多线程执行命令总结.md)
 
-* [常见的排序算法](https://github.com/hellorocky/blog/tree/master/algorithm/sort)
+#### vim
 
-#### ansible
+* [使用宏构造递增数列](https://github.com/hellorocky/blog/blob/master/vim/1.使用宏构造递增数列.md)
 
-* [拷贝文件并且修改文件实例](https://github.com/hellorocky/blog/blob/master/ansible/1.%E6%8B%B7%E8%B4%9D%E8%BD%AF%E4%BB%B6%E5%B9%B6%E4%B8%94%E4%BF%AE%E6%94%B9%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.md)
-* [单个主机不同端口的hosts写法](https://github.com/hellorocky/blog/blob/master/ansible/2.%E5%8D%95%E4%B8%AA%E4%B8%BB%E6%9C%BA%E4%B8%8D%E5%90%8C%E7%AB%AF%E5%8F%A3%E7%9A%84hosts%E5%86%99%E6%B3%95.md)
-
-#### chrome
-
-* [chrome常用插件总结](https://github.com/hellorocky/blog/blob/master/chrome/1.chrome%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%E6%80%BB%E7%BB%93.md)
+#### database
 
 
-#### 数据库
+#### xen
 
-* 数据库是一个公司的基础服务, 应该有专门的DBA团队来维护, 或者使用云数据库, 我总结了的这些知识很有可能用不到, 所以暂时不列出来了!
+* [使用xencenter创建虚拟机](https://github.com/hellorocky/blog/blob/master/xen/1.使用xencenter创建虚拟机.md)
 
-#### django
+#### macOS
 
-* [通过manage.py修改数据库字段](https://github.com/hellorocky/blog/blob/master/django/1.%E9%80%9A%E8%BF%87manage.py%E4%BF%AE%E6%94%B9%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%97%E6%AE%B5.md)
+* [常用命令总结](https://github.com/hellorocky/blog/blob/master/macOS/2.常用命令总结.md)
+* [vim自动补全插件安装及使用](https://github.com/hellorocky/blog/blob/master/macOS/1.vim自动补全插件安装及使用.md)
+* [](https://github.com/hellorocky/blog/blob/master/macOS/readme.md)
 
-#### git
+#### translation
 
-* [git常用撤销操作](https://github.com/hellorocky/blog/blob/master/git/1.git%E5%B8%B8%E7%94%A8%E6%92%A4%E9%94%80%E6%93%8D%E4%BD%9C.md)
-* [gitlab安装](https://github.com/hellorocky/blog/blob/master/git/2.gitlab%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.md)
+* [Code_Like_a_Pythonista_Idiomatic_Python](https://github.com/hellorocky/blog/blob/master/translation/1.Code_Like_a_Pythonista_Idiomatic_Python.md)
+* [docker-in-the-real-world-at-yelp](https://github.com/hellorocky/blog/blob/master/translation/3.docker-in-the-real-world-at-yelp.md)
 
+#### python
 
-#### jumpserver(0.4)
+* [argparse模块的常见用法](https://github.com/hellorocky/blog/blob/master/python/3.argparse模块的常见用法.md)
+* [一次supervisor的umask配置引起的问题](https://github.com/hellorocky/blog/blob/master/python/1.一次supervisor的umask配置引起的问题.md)
+* [简单的HTTP代理服务器](https://github.com/hellorocky/blog/blob/master/python/2.简单的HTTP代理服务器.md)
 
-* [一次完整的jms登陆流程](https://github.com/hellorocky/blog/blob/master/jumpserver/1.%E4%B8%80%E6%AC%A1%E5%AE%8C%E6%95%B4%E7%9A%84ssh%E7%99%BB%E9%99%86%E6%B5%81%E7%A8%8B%E6%98%AF%E6%80%8E%E6%A0%B7%E7%9A%84.md)
-* [coco与jms之间的心跳](https://github.com/hellorocky/blog/blob/master/jumpserver/2.coco%E4%B8%8Ejms%E4%B9%8B%E9%97%B4%E7%9A%84%E5%BF%83%E8%B7%B3%E6%9C%89%E4%BB%80%E4%B9%88%E7%94%A8.md)
+#### web
 
-#### kvm
+* [nginx配置https官方详解](https://github.com/hellorocky/blog/blob/master/web/8.nginx配置https官方详解.md)
+* [rewrite机制常用总结](https://github.com/hellorocky/blog/blob/master/web/4.rewrite机制常用总结.md)
+* [nginx根据IP区分前端项目的正式灰度环境](https://github.com/hellorocky/blog/blob/master/web/7.nginx根据IP区分前端项目的正式灰度环境.md)
+* [nginx常规安全设置](https://github.com/hellorocky/blog/blob/master/web/2.nginx常规安全设置.md)
+* [跨域介绍](https://github.com/hellorocky/blog/blob/master/web/9.跨域介绍.md)
+* [常见问题](https://github.com/hellorocky/blog/blob/master/web/0.常见问题.md)
+* [一次wordpress域名跳转的记录](https://github.com/hellorocky/blog/blob/master/web/3.一次wordpress域名跳转的记录.md)
+* [root和alias区别](https://github.com/hellorocky/blog/blob/master/web/5.root和alias区别.md)
+* [一次nginx配置proxy_path转发路径问题](https://github.com/hellorocky/blog/blob/master/web/6.一次nginx配置proxy_path转发路径问题.md)
+* [Nginx的worker_cpu_affinity详解](https://github.com/hellorocky/blog/blob/master/web/1.Nginx的worker_cpu_affinity详解.md)
 
-* [kvm简单的搭建以及使用](https://github.com/hellorocky/blog/blob/master/kvm/1.kvm%E7%AE%80%E5%8D%95%E7%9A%84%E6%90%AD%E5%BB%BA%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8.md)
+#### network
+
+* [dns常用命令](https://github.com/hellorocky/blog/blob/master/network/5.dns常用命令.md)
+* [ipset命令常见用法](https://github.com/hellorocky/blog/blob/master/network/6.ipset命令常见用法.md)
+* [iptables端口转发实战](https://github.com/hellorocky/blog/blob/master/network/1.iptables端口转发实战.md)
+* [proxychains-ng实现终端代理](https://github.com/hellorocky/blog/blob/master/network/7.proxychains-ng实现终端代理.md)
+* [结合wireshark学习DNS协议](https://github.com/hellorocky/blog/blob/master/network/9.结合wireshark学习DNS协议.md)
+* [服务器多网卡以及IPV6设置实战](https://github.com/hellorocky/blog/blob/master/network/2.服务器多网卡以及IPV6设置实战.md)
+* [curl命令常用总结](https://github.com/hellorocky/blog/blob/master/network/4.curl命令常用总结.md)
+* [使用tcpdump学习TCP的三次握手](https://github.com/hellorocky/blog/blob/master/network/3.使用tcpdump学习TCP的三次握手.md)
+* [ssh代理实战](https://github.com/hellorocky/blog/blob/master/network/8.ssh代理实战.md)
+
+#### rabbitmq
+
+* [集群搭建](https://github.com/hellorocky/blog/blob/master/rabbitmq/2.集群搭建.md)
+* [rabbitmq安装教程](https://github.com/hellorocky/blog/blob/master/rabbitmq/1.rabbitmq安装教程.md)
 
 #### life
 
-* [生活教会我](https://github.com/hellorocky/blog/blob/master/life/0.%E7%94%9F%E6%B4%BB%E6%95%99%E4%BC%9A%E6%88%91.md)
-* [跟阿里云售后联调的总结](https://github.com/hellorocky/blog/blob/master/life/1.%E8%B7%9F%E9%98%BF%E9%87%8C%E4%BA%91%E5%94%AE%E5%90%8E%E8%81%94%E8%B0%83%E4%BF%AE%E6%94%B9hostname%E4%BA%8B%E6%83%85%E6%80%BB%E7%BB%93.md)
-* [学习方法总结](https://github.com/hellorocky/blog/blob/master/life/2.%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93.md)
-* [送给25岁的自己父爱篇](https://github.com/hellorocky/blog/blob/master/life/3.%E9%80%81%E7%BB%9925%E5%B2%81%E7%9A%84%E8%87%AA%E5%B7%B1%E4%B9%8B%E7%88%B6%E7%88%B1%E7%AF%87.md)
-* [钱方这一年](https://github.com/hellorocky/blog/blob/master/life/4.%E9%92%B1%E6%96%B9%E8%BF%99%E4%B8%80%E5%B9%B4.md)
+* [生活教会我](https://github.com/hellorocky/blog/blob/master/life/0.生活教会我.md)
+* [跟阿里云售后联调修改hostname事情总结](https://github.com/hellorocky/blog/blob/master/life/1.跟阿里云售后联调修改hostname事情总结.md)
+* [钱方这一年](https://github.com/hellorocky/blog/blob/master/life/4.钱方这一年.md)
+* [送给25岁的自己之父爱篇](https://github.com/hellorocky/blog/blob/master/life/3.送给25岁的自己之父爱篇.md)
+* [学习方法总结](https://github.com/hellorocky/blog/blob/master/life/2.学习方法总结.md)
 
+#### algorithm
+
+
+#### php
+
+* [php-fpm文件权限问题](https://github.com/hellorocky/blog/blob/master/php/1.php-fpm文件权限问题.md)
+
+#### ansible
+
+* [单个主机不同端口的hosts写法](https://github.com/hellorocky/blog/blob/master/ansible/2.单个主机不同端口的hosts写法.md)
+* [拷贝软件并且修改配置文件](https://github.com/hellorocky/blog/blob/master/ansible/1.拷贝软件并且修改配置文件.md)
+
+#### jumpserver
+
+* [一次完整的ssh登陆流程是怎样的](https://github.com/hellorocky/blog/blob/master/jumpserver/1.一次完整的ssh登陆流程是怎样的.md)
+* [coco与jms之间的心跳有什么用](https://github.com/hellorocky/blog/blob/master/jumpserver/2.coco与jms之间的心跳有什么用.md)
+
+#### kvm
+
+* [kvm简单的搭建以及使用](https://github.com/hellorocky/blog/blob/master/kvm/1.kvm简单的搭建以及使用.md)
+
+#### linux
+
+* [文件描述符](https://github.com/hellorocky/blog/blob/master/linux/11.文件描述符.md)
+* [僵尸进程的一些理解](https://github.com/hellorocky/blog/blob/master/linux/2.僵尸进程的一些理解.md)
+* [生产环境用户权限的分配](https://github.com/hellorocky/blog/blob/master/linux/9.生产环境用户权限的分配.md)
+* [一次从root用户su到qfpay用户失败的经历](https://github.com/hellorocky/blog/blob/master/linux/1.一次从root用户su到qfpay用户失败的经历.md)
+* [禁止修改某文件](https://github.com/hellorocky/blog/blob/master/linux/14.禁止修改某文件.md)
+* [wifi弹窗折腾记录](https://github.com/hellorocky/blog/blob/master/linux/10.wifi弹窗折腾记录.md)
+* [Linux中find命令关于mtime的细节](https://github.com/hellorocky/blog/blob/master/linux/7.Linux中find命令关于mtime的细节.md)
+* [CentOS7开机自启的坑](https://github.com/hellorocky/blog/blob/master/linux/5.CentOS7开机自启的坑.md)
+* [常用文件操作命令](https://github.com/hellorocky/blog/blob/master/linux/13.常用文件操作命令.md)
+* [常见命令总结](https://github.com/hellorocky/blog/blob/master/linux/8.常见命令总结.md)
+* [常用磁盘IO命令](https://github.com/hellorocky/blog/blob/master/linux/12.常用磁盘IO命令.md)
+* [一次Vpc到Idc网速排查的过程](https://github.com/hellorocky/blog/blob/master/linux/3.一次Vpc到Idc网速排查的过程.md)
+* [一次阿里云VPC线上DNS问题的排查经历](https://github.com/hellorocky/blog/blob/master/linux/6.一次阿里云VPC线上DNS问题的排查经历.md)
+* [一次线上执行长耗时命令时的经历](https://github.com/hellorocky/blog/blob/master/linux/15.一次线上执行长耗时命令时的经历.md)
+* [VNC搭建以及使用](https://github.com/hellorocky/blog/blob/master/linux/16.VNC搭建以及使用.md)
+* [线上问题排查总结](https://github.com/hellorocky/blog/blob/master/linux/4.线上问题排查总结.md)
+
+#### chrome
+
+* [chrome常用插件总结](https://github.com/hellorocky/blog/blob/master/chrome/1.chrome常用插件总结.md)
+
+#### django
+
+* [通过manage.py修改数据库字段](https://github.com/hellorocky/blog/blob/master/django/1.通过manage.py修改数据库字段.md)
+
+#### shadowsocks
+
+* [shadowsocks加速之升级Linux内核](https://github.com/hellorocky/blog/blob/master/shadowsocks/1.shadowsocks加速之升级Linux内核.md)
+
+#### git
+
+* [gitlab安装教程](https://github.com/hellorocky/blog/blob/master/git/2.gitlab安装教程.md)
+* [git常用撤销操作](https://github.com/hellorocky/blog/blob/master/git/1.git常用撤销操作.md)
