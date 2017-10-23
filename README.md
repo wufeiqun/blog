@@ -39,3 +39,11 @@
 
 * [kvm简单的搭建以及使用](https://github.com/hellorocky/blog/blob/master/kvm/1.kvm%E7%AE%80%E5%8D%95%E7%9A%84%E6%90%AD%E5%BB%BA%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8.md)
 
+#### life
+
+* [生活教会我](https://github.com/hellorocky/blog/blob/master/life/0.%E7%94%9F%E6%B4%BB%E6%95%99%E4%BC%9A%E6%88%91.md)
+* [跟阿里云售后联调的总结](https://github.com/hellorocky/blog/blob/master/life/1.%E8%B7%9F%E9%98%BF%E9%87%8C%E4%BA%91%E5%94%AE%E5%90%8E%E8%81%94%E8%B0%83%E4%BF%AE%E6%94%B9hostname%E4%BA%8B%E6%83%85%E6%80%BB%E7%BB%93.md)
+* [学习方法总结](https://github.com/hellorocky/blog/blob/master/life/2.%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93.md)
+* [送给25岁的自己父爱篇](https://github.com/hellorocky/blog/blob/master/life/3.%E9%80%81%E7%BB%9925%E5%B2%81%E7%9A%84%E8%87%AA%E5%B7%B1%E4%B9%8B%E7%88%B6%E7%88%B1%E7%AF%87.md)
+* [钱方这一年](https://github.com/hellorocky/blog/blob/master/life/4.%E9%92%B1%E6%96%B9%E8%BF%99%E4%B8%80%E5%B9%B4.md)
+
