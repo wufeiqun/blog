@@ -27,5 +27,15 @@
 #### git
 
 * [git常用撤销操作](https://github.com/hellorocky/blog/blob/master/git/1.git%E5%B8%B8%E7%94%A8%E6%92%A4%E9%94%80%E6%93%8D%E4%BD%9C.md)
-* [gitlab安装](https://github.com/hellorocky/blog/blob/master/gitlab/1.gitlab%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.md)
+* [gitlab安装](https://github.com/hellorocky/blog/blob/master/git/2.gitlab%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.md)
+
+
+#### jumpserver(0.4)
+
+* [一次完整的jms登陆流程](https://github.com/hellorocky/blog/blob/master/jumpserver/1.%E4%B8%80%E6%AC%A1%E5%AE%8C%E6%95%B4%E7%9A%84ssh%E7%99%BB%E9%99%86%E6%B5%81%E7%A8%8B%E6%98%AF%E6%80%8E%E6%A0%B7%E7%9A%84.md)
+* [coco与jms之间的心跳](https://github.com/hellorocky/blog/blob/master/jumpserver/2.coco%E4%B8%8Ejms%E4%B9%8B%E9%97%B4%E7%9A%84%E5%BF%83%E8%B7%B3%E6%9C%89%E4%BB%80%E4%B9%88%E7%94%A8.md)
+
+#### kvm
+
+* [kvm简单的搭建以及使用](https://github.com/hellorocky/blog/blob/master/kvm/1.kvm%E7%AE%80%E5%8D%95%E7%9A%84%E6%90%AD%E5%BB%BA%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8.md)
 
