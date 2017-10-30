@@ -28,6 +28,7 @@
 #### python
 
 * [argparse模块的常见用法](https://github.com/hellorocky/blog/blob/master/python/3.argparse模块的常见用法.md)
+* [常用的时间,日期处理方法总结](https://github.com/hellorocky/blog/blob/master/python/4.常用的时间,日期处理方法总结.md)
 * [一次supervisor的umask配置引起的问题](https://github.com/hellorocky/blog/blob/master/python/1.一次supervisor的umask配置引起的问题.md)
 * [简单的HTTP代理服务器](https://github.com/hellorocky/blog/blob/master/python/2.简单的HTTP代理服务器.md)
 
@@ -40,6 +41,7 @@
 * [跨域介绍](https://github.com/hellorocky/blog/blob/master/web/9.跨域介绍.md)
 * [常见问题](https://github.com/hellorocky/blog/blob/master/web/0.常见问题.md)
 * [一次wordpress域名跳转的记录](https://github.com/hellorocky/blog/blob/master/web/3.一次wordpress域名跳转的记录.md)
+* [使用letsencrypt制作免费https证书](https://github.com/hellorocky/blog/blob/master/web/10.使用letsencrypt制作免费https证书.md)
 * [root和alias区别](https://github.com/hellorocky/blog/blob/master/web/5.root和alias区别.md)
 * [一次nginx配置proxy_path转发路径问题](https://github.com/hellorocky/blog/blob/master/web/6.一次nginx配置proxy_path转发路径问题.md)
 * [Nginx的worker_cpu_affinity详解](https://github.com/hellorocky/blog/blob/master/web/1.Nginx的worker_cpu_affinity详解.md)
@@ -98,6 +100,7 @@
 * [一次从root用户su到qfpay用户失败的经历](https://github.com/hellorocky/blog/blob/master/linux/1.一次从root用户su到qfpay用户失败的经历.md)
 * [禁止修改某文件](https://github.com/hellorocky/blog/blob/master/linux/14.禁止修改某文件.md)
 * [wifi弹窗折腾记录](https://github.com/hellorocky/blog/blob/master/linux/10.wifi弹窗折腾记录.md)
+* [Mac下sz和rz的使用](https://github.com/hellorocky/blog/blob/master/linux/17.Mac下sz和rz的使用.md)
 * [Linux中find命令关于mtime的细节](https://github.com/hellorocky/blog/blob/master/linux/7.Linux中find命令关于mtime的细节.md)
 * [CentOS7开机自启的坑](https://github.com/hellorocky/blog/blob/master/linux/5.CentOS7开机自启的坑.md)
 * [常用文件操作命令](https://github.com/hellorocky/blog/blob/master/linux/13.常用文件操作命令.md)
