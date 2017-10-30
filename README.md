@@ -18,7 +18,7 @@
 
 * [常用命令总结](https://github.com/hellorocky/blog/blob/master/macOS/2.常用命令总结.md)
 * [vim自动补全插件安装及使用](https://github.com/hellorocky/blog/blob/master/macOS/1.vim自动补全插件安装及使用.md)
-* [](https://github.com/hellorocky/blog/blob/master/macOS/readme.md)
+* [Mac下sz和rz的使用](https://github.com/hellorocky/blog/blob/master/macOS/3.Mac下sz和rz的使用.md)
 
 #### translation
 
@@ -100,7 +100,6 @@
 * [一次从root用户su到qfpay用户失败的经历](https://github.com/hellorocky/blog/blob/master/linux/1.一次从root用户su到qfpay用户失败的经历.md)
 * [禁止修改某文件](https://github.com/hellorocky/blog/blob/master/linux/14.禁止修改某文件.md)
 * [wifi弹窗折腾记录](https://github.com/hellorocky/blog/blob/master/linux/10.wifi弹窗折腾记录.md)
-* [Mac下sz和rz的使用](https://github.com/hellorocky/blog/blob/master/linux/17.Mac下sz和rz的使用.md)
 * [Linux中find命令关于mtime的细节](https://github.com/hellorocky/blog/blob/master/linux/7.Linux中find命令关于mtime的细节.md)
 * [CentOS7开机自启的坑](https://github.com/hellorocky/blog/blob/master/linux/5.CentOS7开机自启的坑.md)
 * [常用文件操作命令](https://github.com/hellorocky/blog/blob/master/linux/13.常用文件操作命令.md)
