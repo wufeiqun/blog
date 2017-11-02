@@ -30,6 +30,7 @@
 * [argparse模块的常见用法](https://github.com/hellorocky/blog/blob/master/python/3.argparse模块的常见用法.md)
 * [常用的时间,日期处理方法总结](https://github.com/hellorocky/blog/blob/master/python/4.常用的时间,日期处理方法总结.md)
 * [一次supervisor的umask配置引起的问题](https://github.com/hellorocky/blog/blob/master/python/1.一次supervisor的umask配置引起的问题.md)
+* [pyflame简单使用](https://github.com/hellorocky/blog/blob/master/python/5.pyflame简单使用.md)
 * [简单的HTTP代理服务器](https://github.com/hellorocky/blog/blob/master/python/2.简单的HTTP代理服务器.md)
 
 #### web
@@ -103,6 +104,7 @@
 * [wifi弹窗折腾记录](https://github.com/hellorocky/blog/blob/master/linux/10.wifi弹窗折腾记录.md)
 * [Linux中find命令关于mtime的细节](https://github.com/hellorocky/blog/blob/master/linux/7.Linux中find命令关于mtime的细节.md)
 * [CentOS7开机自启的坑](https://github.com/hellorocky/blog/blob/master/linux/5.CentOS7开机自启的坑.md)
+* [access日志IP,TOP_N统计](https://github.com/hellorocky/blog/blob/master/linux/17.access日志IP,TOP_N统计.md)
 * [常用文件操作命令](https://github.com/hellorocky/blog/blob/master/linux/13.常用文件操作命令.md)
 * [常见命令总结](https://github.com/hellorocky/blog/blob/master/linux/8.常见命令总结.md)
 * [常用磁盘IO命令](https://github.com/hellorocky/blog/blob/master/linux/12.常用磁盘IO命令.md)
