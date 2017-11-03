@@ -32,6 +32,7 @@
 * [一次supervisor的umask配置引起的问题](https://github.com/hellorocky/blog/blob/master/python/1.一次supervisor的umask配置引起的问题.md)
 * [pyflame简单使用](https://github.com/hellorocky/blog/blob/master/python/5.pyflame简单使用.md)
 * [简单的HTTP代理服务器](https://github.com/hellorocky/blog/blob/master/python/2.简单的HTTP代理服务器.md)
+* [concurrent.futures模块总结](https://github.com/hellorocky/blog/blob/master/python/6.concurrent.futures模块总结.md)
 
 #### web
 
