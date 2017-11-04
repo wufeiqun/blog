@@ -73,6 +73,7 @@
 * [钱方这一年](https://github.com/hellorocky/blog/blob/master/life/4.钱方这一年.md)
 * [送给25岁的自己之父爱篇](https://github.com/hellorocky/blog/blob/master/life/3.送给25岁的自己之父爱篇.md)
 * [学习方法总结](https://github.com/hellorocky/blog/blob/master/life/2.学习方法总结.md)
+* [如何学习一门技术](https://github.com/hellorocky/blog/blob/master/life/7.如何学习一门技术.md)
 * [技术人成长的四个阶段](https://github.com/hellorocky/blog/blob/master/life/6.技术人成长的四个阶段.md)
 
 #### algorithm
