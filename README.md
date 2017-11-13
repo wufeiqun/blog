@@ -31,6 +31,7 @@
 * [常用的时间,日期处理方法总结](https://github.com/hellorocky/blog/blob/master/python/4.常用的时间,日期处理方法总结.md)
 * [一次supervisor的umask配置引起的问题](https://github.com/hellorocky/blog/blob/master/python/1.一次supervisor的umask配置引起的问题.md)
 * [pyflame简单使用](https://github.com/hellorocky/blog/blob/master/python/5.pyflame简单使用.md)
+* [正则表达式常用总结](https://github.com/hellorocky/blog/blob/master/python/7.正则表达式常用总结.md)
 * [简单的HTTP代理服务器](https://github.com/hellorocky/blog/blob/master/python/2.简单的HTTP代理服务器.md)
 * [concurrent.futures模块总结](https://github.com/hellorocky/blog/blob/master/python/6.concurrent.futures模块总结.md)
 
@@ -92,6 +93,7 @@
 
 * [一次完整的ssh登陆流程是怎样的](https://github.com/hellorocky/blog/blob/master/jumpserver/1.一次完整的ssh登陆流程是怎样的.md)
 * [coco与jms之间的心跳有什么用](https://github.com/hellorocky/blog/blob/master/jumpserver/2.coco与jms之间的心跳有什么用.md)
+* [解决jms登陆ubuntu使用vim乱码的问题](https://github.com/hellorocky/blog/blob/master/jumpserver/3.解决jms登陆ubuntu使用vim乱码的问题.md)
 
 #### kvm
 
