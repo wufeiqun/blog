@@ -35,6 +35,10 @@
 * [简单的HTTP代理服务器](https://github.com/hellorocky/blog/blob/master/python/2.简单的HTTP代理服务器.md)
 * [concurrent.futures模块总结](https://github.com/hellorocky/blog/blob/master/python/6.concurrent.futures模块总结.md)
 
+#### golang
+
+* [常见的类型转换](https://github.com/hellorocky/blog/blob/master/golang/0.常见的类型转换.md)
+
 #### web
 
 * [nginx配置https官方详解](https://github.com/hellorocky/blog/blob/master/web/8.nginx配置https官方详解.md)
