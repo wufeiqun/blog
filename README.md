@@ -73,6 +73,7 @@
 #### life
 
 * [生活教会我](https://github.com/hellorocky/blog/blob/master/life/0.生活教会我.md)
+* [腾讯的技术价值观和技术人才修炼](https://github.com/hellorocky/blog/blob/master/life/8.腾讯的技术价值观和技术人才修炼.md)
 * [如何提升你的能力_给年轻程序员的几条建议](https://github.com/hellorocky/blog/blob/master/life/5.如何提升你的能力_给年轻程序员的几条建议.md)
 * [跟阿里云售后联调修改hostname事情总结](https://github.com/hellorocky/blog/blob/master/life/1.跟阿里云售后联调修改hostname事情总结.md)
 * [钱方这一年](https://github.com/hellorocky/blog/blob/master/life/4.钱方这一年.md)
