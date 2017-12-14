@@ -54,6 +54,10 @@
 * [一次nginx配置proxy_path转发路径问题](https://github.com/hellorocky/blog/blob/master/web/6.一次nginx配置proxy_path转发路径问题.md)
 * [Nginx的worker_cpu_affinity详解](https://github.com/hellorocky/blog/blob/master/web/1.Nginx的worker_cpu_affinity详解.md)
 
+#### maven
+
+* [maven私服配置方法](https://github.com/hellorocky/blog/blob/master/maven/0.maven私服配置方法.md)
+
 #### network
 
 * [dns常用命令](https://github.com/hellorocky/blog/blob/master/network/5.dns常用命令.md)
@@ -77,6 +81,7 @@
 * [腾讯的技术价值观和技术人才修炼](https://github.com/hellorocky/blog/blob/master/life/8.腾讯的技术价值观和技术人才修炼.md)
 * [如何提升你的能力_给年轻程序员的几条建议](https://github.com/hellorocky/blog/blob/master/life/5.如何提升你的能力_给年轻程序员的几条建议.md)
 * [影响圈与关注圈](https://github.com/hellorocky/blog/blob/master/life/9.影响圈与关注圈.md)
+* [工作教会我](https://github.com/hellorocky/blog/blob/master/life/000.工作教会我.md)
 * [跟阿里云售后联调修改hostname事情总结](https://github.com/hellorocky/blog/blob/master/life/1.跟阿里云售后联调修改hostname事情总结.md)
 * [钱方这一年](https://github.com/hellorocky/blog/blob/master/life/4.钱方这一年.md)
 * [送给25岁的自己之父爱篇](https://github.com/hellorocky/blog/blob/master/life/3.送给25岁的自己之父爱篇.md)
@@ -116,6 +121,7 @@
 * [禁止修改某文件](https://github.com/hellorocky/blog/blob/master/linux/14.禁止修改某文件.md)
 * [wifi弹窗折腾记录](https://github.com/hellorocky/blog/blob/master/linux/10.wifi弹窗折腾记录.md)
 * [Linux中find命令关于mtime的细节](https://github.com/hellorocky/blog/blob/master/linux/7.Linux中find命令关于mtime的细节.md)
+* [公有云性能对比](https://github.com/hellorocky/blog/blob/master/linux/18.公有云性能对比.md)
 * [CentOS7开机自启的坑](https://github.com/hellorocky/blog/blob/master/linux/5.CentOS7开机自启的坑.md)
 * [access日志IP,TOP_N统计](https://github.com/hellorocky/blog/blob/master/linux/17.access日志IP,TOP_N统计.md)
 * [常用文件操作命令](https://github.com/hellorocky/blog/blob/master/linux/13.常用文件操作命令.md)
@@ -143,3 +149,7 @@
 
 * [gitlab安装教程](https://github.com/hellorocky/blog/blob/master/git/2.gitlab安装教程.md)
 * [git常用撤销操作](https://github.com/hellorocky/blog/blob/master/git/1.git常用撤销操作.md)
+
+#### spring
+
+* [使用IEDA创建第一个springboot项目](https://github.com/hellorocky/blog/blob/master/spring/0.使用IEDA创建第一个springboot项目.md)
