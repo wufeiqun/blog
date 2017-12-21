@@ -1,0 +1,19 @@
+---
+- hosts: all
+  tasks:
+  - name: 新加用户
+    user: 
+      name: test
+      shell: /bin/bash
+      comment: "test user"
+  - name: 添加公钥
+    authorized_key: 
+      user: test
+      key: "{{ lookup('file', '/tmp/keys/test.pub') }}"
+  - name: 添加sudoers
+    lineinfile:
+      path: /etc/sudoers
+      # 如果要替换一行的话需要使用下面的正则去匹配, 如果匹配到多行的话会替换最后一个匹配到的, 如果要新增一行的话就不需要正则匹配了
+      # 如果要删除一行的话, 需要结合正则和state为absent
+      #regexp: '^test ALL='
+      line: 'test ALL=(ALL) NOPASSWD: ALL'

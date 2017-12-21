@@ -1,0 +1,24 @@
+---
+- hosts: test
+  tasks:
+  - name: 复制xxx文件到远程服务器 
+    copy:
+      src: /srv/myfiles/foo.conf
+      dest: /etc/foo.conf
+      owner: foo
+      group: foo
+      mode: 0644
+  - name: 修改配置文件, 向指定的配置文件后面追加下面的配置文件, num变量从host.txt中获取, marker的作用是为了以后删除等操作的标记
+    blockinfile:
+      dest: /home/rocky/test/1.txt
+      block: |
+          [DonkeyId]
+          extension=donkeyid.so
+          ;0-4095
+          donkeyid.node_id={{num}}
+          ;;0-当前时间戳
+          donkeyid.epoch=0
+        marker: ";{mark} Adding IP address"
+  - name: debug info
+    debug:
+      msg: "{{num}}"
