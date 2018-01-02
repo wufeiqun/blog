@@ -63,6 +63,7 @@
 * [dns常用命令](https://github.com/hellorocky/blog/blob/master/network/5.dns常用命令.md)
 * [ipset命令常见用法](https://github.com/hellorocky/blog/blob/master/network/6.ipset命令常见用法.md)
 * [iptables端口转发实战](https://github.com/hellorocky/blog/blob/master/network/1.iptables端口转发实战.md)
+* [企业网段划分经验总结](https://github.com/hellorocky/blog/blob/master/network/10.企业网段划分经验总结.md)
 * [proxychains-ng实现终端代理](https://github.com/hellorocky/blog/blob/master/network/7.proxychains-ng实现终端代理.md)
 * [结合wireshark学习DNS协议](https://github.com/hellorocky/blog/blob/master/network/9.结合wireshark学习DNS协议.md)
 * [服务器多网卡以及IPV6设置实战](https://github.com/hellorocky/blog/blob/master/network/2.服务器多网卡以及IPV6设置实战.md)
@@ -86,6 +87,7 @@
 * [钱方这一年](https://github.com/hellorocky/blog/blob/master/life/4.钱方这一年.md)
 * [送给25岁的自己之父爱篇](https://github.com/hellorocky/blog/blob/master/life/3.送给25岁的自己之父爱篇.md)
 * [学习方法总结](https://github.com/hellorocky/blog/blob/master/life/2.学习方法总结.md)
+* [一下科技转岗记录](https://github.com/hellorocky/blog/blob/master/life/10.一下科技转岗记录.md)
 * [媳妇儿我想对你说](https://github.com/hellorocky/blog/blob/master/life/00.媳妇儿我想对你说.md)
 * [如何学习一门技术](https://github.com/hellorocky/blog/blob/master/life/7.如何学习一门技术.md)
 * [技术人成长的四个阶段](https://github.com/hellorocky/blog/blob/master/life/6.技术人成长的四个阶段.md)
@@ -99,8 +101,10 @@
 
 #### ansible
 
+* [常用的ansible命令备忘](https://github.com/hellorocky/blog/blob/master/ansible/0.常用的ansible命令备忘.md)
 * [单个主机不同端口的hosts写法](https://github.com/hellorocky/blog/blob/master/ansible/2.单个主机不同端口的hosts写法.md)
 * [拷贝软件并且修改配置文件](https://github.com/hellorocky/blog/blob/master/ansible/1.拷贝软件并且修改配置文件.md)
+* [使用ansible启动远程服务器的后台进程](https://github.com/hellorocky/blog/blob/master/ansible/3.使用ansible启动远程服务器的后台进程.md)
 
 #### jumpserver
 
@@ -152,4 +156,6 @@
 
 #### spring
 
+* [spring中文乱码的问题](https://github.com/hellorocky/blog/blob/master/spring/1.spring中文乱码的问题.md)
+* [获取请求的参数](https://github.com/hellorocky/blog/blob/master/spring/2.获取请求的参数.md)
 * [使用IEDA创建第一个springboot项目](https://github.com/hellorocky/blog/blob/master/spring/0.使用IEDA创建第一个springboot项目.md)
