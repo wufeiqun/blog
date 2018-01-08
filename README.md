@@ -71,6 +71,10 @@
 * [使用tcpdump学习TCP的三次握手](https://github.com/hellorocky/blog/blob/master/network/3.使用tcpdump学习TCP的三次握手.md)
 * [ssh代理实战](https://github.com/hellorocky/blog/blob/master/network/8.ssh代理实战.md)
 
+#### postman
+
+* [postman入门](https://github.com/hellorocky/blog/blob/master/postman/1.postman入门.md)
+
 #### rabbitmq
 
 * [集群搭建](https://github.com/hellorocky/blog/blob/master/rabbitmq/2.集群搭建.md)
@@ -89,6 +93,7 @@
 * [学习方法总结](https://github.com/hellorocky/blog/blob/master/life/2.学习方法总结.md)
 * [一下科技转岗记录](https://github.com/hellorocky/blog/blob/master/life/10.一下科技转岗记录.md)
 * [媳妇儿我想对你说](https://github.com/hellorocky/blog/blob/master/life/00.媳妇儿我想对你说.md)
+* [生活教会我](https://github.com/hellorocky/blog/blob/master/life/2018.生活教会我.md)
 * [如何学习一门技术](https://github.com/hellorocky/blog/blob/master/life/7.如何学习一门技术.md)
 * [技术人成长的四个阶段](https://github.com/hellorocky/blog/blob/master/life/6.技术人成长的四个阶段.md)
 
