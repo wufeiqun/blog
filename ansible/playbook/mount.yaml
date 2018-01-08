@@ -1,0 +1,12 @@
+# 格式化磁盘并挂载到新分区, 执行完以后会自动修改/etc/fstab文件
+---
+- hosts: all
+  tasks:
+  - name: 给挂载的磁盘/dev/vdb分区
+    parted: device=/dev/vdb label=gpt number=1 part_start=0% part_end=100% part_type=primary state=present 
+  - name: 格式化/dev/vdb1分区
+    filesystem: dev=/dev/vdb fstype=ext4  
+  - name: 创建/data目录
+    file: path=/data state=directory mode=0755  
+  - name: 挂载/dev/vdb到/data路径
+    mount: path=/data src=/dev/vdb fstype=ext4 state=mounted
