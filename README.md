@@ -124,12 +124,13 @@
 #### linux
 
 * [文件描述符](https://github.com/hellorocky/blog/blob/master/linux/11.文件描述符.md)
+* [Linux中find命令实战经验](https://github.com/hellorocky/blog/blob/master/linux/7.Linux中find命令实战经验.md)
 * [僵尸进程的一些理解](https://github.com/hellorocky/blog/blob/master/linux/2.僵尸进程的一些理解.md)
+* [sed命令实战总结](https://github.com/hellorocky/blog/blob/master/linux/19.sed命令实战总结.md)
 * [生产环境用户权限的分配](https://github.com/hellorocky/blog/blob/master/linux/9.生产环境用户权限的分配.md)
 * [一次从root用户su到qfpay用户失败的经历](https://github.com/hellorocky/blog/blob/master/linux/1.一次从root用户su到qfpay用户失败的经历.md)
 * [禁止修改某文件](https://github.com/hellorocky/blog/blob/master/linux/14.禁止修改某文件.md)
 * [wifi弹窗折腾记录](https://github.com/hellorocky/blog/blob/master/linux/10.wifi弹窗折腾记录.md)
-* [Linux中find命令关于mtime的细节](https://github.com/hellorocky/blog/blob/master/linux/7.Linux中find命令关于mtime的细节.md)
 * [公有云性能对比](https://github.com/hellorocky/blog/blob/master/linux/18.公有云性能对比.md)
 * [CentOS7开机自启的坑](https://github.com/hellorocky/blog/blob/master/linux/5.CentOS7开机自启的坑.md)
 * [access日志IP,TOP_N统计](https://github.com/hellorocky/blog/blob/master/linux/17.access日志IP,TOP_N统计.md)
