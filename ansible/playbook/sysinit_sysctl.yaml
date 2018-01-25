@@ -45,22 +45,22 @@
       reload: yes
 # modify limit both hard and soft
   - pam_limits:
-        domain: '*'
+        domain: root
         limit_type: '-'
         limit_item: nofile
-        value: 1000000
-  - pam_limits:
-        domain: '*'
-        limit_type: '-'
-        limit_item: nproc
         value: 100000
   - pam_limits:
         domain: root
         limit_type: '-'
-        limit_item: nofile
-        value: 1000000
+        limit_item: nproc
+        value: 10000
   - pam_limits:
-        domain: root
+        domain: '*'
+        limit_type: '-'
+        limit_item: nofile
+        value: 100000
+  - pam_limits:
+        domain: '*'
         limit_type: '-'
         limit_item: nproc
-        value: 100000
+        value: 10000
