@@ -89,6 +89,7 @@
 * [工作教会我](https://github.com/hellorocky/blog/blob/master/life/000.工作教会我.md)
 * [跟阿里云售后联调修改hostname事情总结](https://github.com/hellorocky/blog/blob/master/life/1.跟阿里云售后联调修改hostname事情总结.md)
 * [钱方这一年](https://github.com/hellorocky/blog/blob/master/life/4.钱方这一年.md)
+* [运维工作相关感受总结](https://github.com/hellorocky/blog/blob/master/life/11.运维工作相关感受总结.md)
 * [送给25岁的自己之父爱篇](https://github.com/hellorocky/blog/blob/master/life/3.送给25岁的自己之父爱篇.md)
 * [学习方法总结](https://github.com/hellorocky/blog/blob/master/life/2.学习方法总结.md)
 * [一下科技转岗记录](https://github.com/hellorocky/blog/blob/master/life/10.一下科技转岗记录.md)
@@ -103,6 +104,11 @@
 #### php
 
 * [php-fpm文件权限问题](https://github.com/hellorocky/blog/blob/master/php/1.php-fpm文件权限问题.md)
+* [百万超人PHP相关总结](https://github.com/hellorocky/blog/blob/master/php/2.百万超人PHP相关总结.md)
+
+#### elk
+
+* [一下科技日志解决方案](https://github.com/hellorocky/blog/blob/master/elk/1.一下科技日志解决方案.md)
 
 #### ansible
 
