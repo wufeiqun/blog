@@ -84,6 +84,7 @@
 
 * [生活教会我](https://github.com/hellorocky/blog/blob/master/life/0.生活教会我.md)
 * [腾讯的技术价值观和技术人才修炼](https://github.com/hellorocky/blog/blob/master/life/8.腾讯的技术价值观和技术人才修炼.md)
+* [2018一下科技年会总结](https://github.com/hellorocky/blog/blob/master/life/12.2018一下科技年会总结.md)
 * [如何提升你的能力_给年轻程序员的几条建议](https://github.com/hellorocky/blog/blob/master/life/5.如何提升你的能力_给年轻程序员的几条建议.md)
 * [影响圈与关注圈](https://github.com/hellorocky/blog/blob/master/life/9.影响圈与关注圈.md)
 * [工作教会我](https://github.com/hellorocky/blog/blob/master/life/000.工作教会我.md)
@@ -108,6 +109,8 @@
 
 #### elk
 
+* [使用logrotate切割日志](https://github.com/hellorocky/blog/blob/master/elk/3.使用logrotate切割日志.md)
+* [使用ELK简单分析nginx日志](https://github.com/hellorocky/blog/blob/master/elk/2.使用ELK简单分析nginx日志.md)
 * [一下科技日志解决方案](https://github.com/hellorocky/blog/blob/master/elk/1.一下科技日志解决方案.md)
 
 #### ansible
@@ -148,6 +151,7 @@
 * [一次线上执行长耗时命令时的经历](https://github.com/hellorocky/blog/blob/master/linux/15.一次线上执行长耗时命令时的经历.md)
 * [VNC搭建以及使用](https://github.com/hellorocky/blog/blob/master/linux/16.VNC搭建以及使用.md)
 * [线上问题排查总结](https://github.com/hellorocky/blog/blob/master/linux/4.线上问题排查总结.md)
+* [通用知识点](https://github.com/hellorocky/blog/blob/master/linux/0.通用知识点.md)
 
 #### chrome
 
