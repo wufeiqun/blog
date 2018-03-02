@@ -160,6 +160,7 @@
 #### django
 
 * [通过manage.py修改数据库字段](https://github.com/hellorocky/blog/blob/master/django/1.通过manage.py修改数据库字段.md)
+* [通用知识点](https://github.com/hellorocky/blog/blob/master/django/0.通用知识点.md)
 
 #### shadowsocks
 
@@ -169,6 +170,10 @@
 
 * [gitlab安装教程](https://github.com/hellorocky/blog/blob/master/git/2.gitlab安装教程.md)
 * [git常用撤销操作](https://github.com/hellorocky/blog/blob/master/git/1.git常用撤销操作.md)
+
+#### supervisor
+
+* [supervisor在Ubuntu下的采坑](https://github.com/hellorocky/blog/blob/master/supervisor/1.supervisor在Ubuntu下的采坑.md)
 
 #### spring
 
