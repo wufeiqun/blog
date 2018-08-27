@@ -29,9 +29,11 @@
 
 * [argparse模块的常见用法](https://github.com/hellorocky/blog/blob/master/python/3.argparse模块的常见用法.md)
 * [常用的时间,日期处理方法总结](https://github.com/hellorocky/blog/blob/master/python/4.常用的时间,日期处理方法总结.md)
+* [class转换成dict实践总结](https://github.com/hellorocky/blog/blob/master/python/8.class转换成dict实践总结.md)
 * [一次supervisor的umask配置引起的问题](https://github.com/hellorocky/blog/blob/master/python/1.一次supervisor的umask配置引起的问题.md)
 * [pyflame简单使用](https://github.com/hellorocky/blog/blob/master/python/5.pyflame简单使用.md)
 * [正则表达式常用总结](https://github.com/hellorocky/blog/blob/master/python/7.正则表达式常用总结.md)
+* [通用知识点](https://github.com/hellorocky/blog/blob/master/python/0.通用知识点.md)
 * [简单的HTTP代理服务器](https://github.com/hellorocky/blog/blob/master/python/2.简单的HTTP代理服务器.md)
 * [concurrent.futures模块总结](https://github.com/hellorocky/blog/blob/master/python/6.concurrent.futures模块总结.md)
 
@@ -39,20 +41,6 @@
 
 * [常见的类型转换](https://github.com/hellorocky/blog/blob/master/golang/0.常见的类型转换.md)
 * [文件读写](https://github.com/hellorocky/blog/blob/master/golang/1.文件读写.md)
-
-#### web
-
-* [nginx配置https官方详解](https://github.com/hellorocky/blog/blob/master/web/8.nginx配置https官方详解.md)
-* [rewrite机制常用总结](https://github.com/hellorocky/blog/blob/master/web/4.rewrite机制常用总结.md)
-* [nginx根据IP区分前端项目的正式灰度环境](https://github.com/hellorocky/blog/blob/master/web/7.nginx根据IP区分前端项目的正式灰度环境.md)
-* [nginx常规安全设置](https://github.com/hellorocky/blog/blob/master/web/2.nginx常规安全设置.md)
-* [跨域介绍](https://github.com/hellorocky/blog/blob/master/web/9.跨域介绍.md)
-* [常见问题](https://github.com/hellorocky/blog/blob/master/web/0.常见问题.md)
-* [一次wordpress域名跳转的记录](https://github.com/hellorocky/blog/blob/master/web/3.一次wordpress域名跳转的记录.md)
-* [使用letsencrypt制作免费https证书](https://github.com/hellorocky/blog/blob/master/web/10.使用letsencrypt制作免费https证书.md)
-* [root和alias区别](https://github.com/hellorocky/blog/blob/master/web/5.root和alias区别.md)
-* [一次nginx配置proxy_path转发路径问题](https://github.com/hellorocky/blog/blob/master/web/6.一次nginx配置proxy_path转发路径问题.md)
-* [Nginx的worker_cpu_affinity详解](https://github.com/hellorocky/blog/blob/master/web/1.Nginx的worker_cpu_affinity详解.md)
 
 #### maven
 
@@ -77,8 +65,13 @@
 
 #### rabbitmq
 
+* [RabbitMQ扩容](https://github.com/hellorocky/blog/blob/master/rabbitmq/4.RabbitMQ扩容.md)
 * [集群搭建](https://github.com/hellorocky/blog/blob/master/rabbitmq/2.集群搭建.md)
+* [RabbitMQ常见问题总结](https://github.com/hellorocky/blog/blob/master/rabbitmq/0.RabbitMQ常见问题总结.md)
+* [我是一个消息](https://github.com/hellorocky/blog/blob/master/rabbitmq/5.我是一个消息.md)
 * [rabbitmq安装教程](https://github.com/hellorocky/blog/blob/master/rabbitmq/1.rabbitmq安装教程.md)
+* [修改hostname导致RabbitMQ数据丢失的问题](https://github.com/hellorocky/blog/blob/master/rabbitmq/3.修改hostname导致RabbitMQ数据丢失的问题.md)
+* [线上RabbitMQ流量突增的问题思考](https://github.com/hellorocky/blog/blob/master/rabbitmq/6.线上RabbitMQ流量突增的问题思考.md)
 
 #### life
 
@@ -110,6 +103,8 @@
 #### elk
 
 * [使用logrotate切割日志](https://github.com/hellorocky/blog/blob/master/elk/3.使用logrotate切割日志.md)
+* [filebeat配置input日志json格式](https://github.com/hellorocky/blog/blob/master/elk/5.filebeat配置input日志json格式.md)
+* [filebeat性能优化实战](https://github.com/hellorocky/blog/blob/master/elk/4.filebeat性能优化实战.md)
 * [使用ELK简单分析nginx日志](https://github.com/hellorocky/blog/blob/master/elk/2.使用ELK简单分析nginx日志.md)
 * [一下科技日志解决方案](https://github.com/hellorocky/blog/blob/master/elk/1.一下科技日志解决方案.md)
 
@@ -126,6 +121,21 @@
 * [coco与jms之间的心跳有什么用](https://github.com/hellorocky/blog/blob/master/jumpserver/2.coco与jms之间的心跳有什么用.md)
 * [解决jms登陆ubuntu使用vim乱码的问题](https://github.com/hellorocky/blog/blob/master/jumpserver/3.解决jms登陆ubuntu使用vim乱码的问题.md)
 
+#### nginx
+
+* [nginx配置https官方详解](https://github.com/hellorocky/blog/blob/master/nginx/8.nginx配置https官方详解.md)
+* [rewrite机制常用总结](https://github.com/hellorocky/blog/blob/master/nginx/4.rewrite机制常用总结.md)
+* [nginx根据IP区分前端项目的正式灰度环境](https://github.com/hellorocky/blog/blob/master/nginx/7.nginx根据IP区分前端项目的正式灰度环境.md)
+* [nginx常规安全设置](https://github.com/hellorocky/blog/blob/master/nginx/2.nginx常规安全设置.md)
+* [跨域介绍](https://github.com/hellorocky/blog/blob/master/nginx/9.跨域介绍.md)
+* [常见问题](https://github.com/hellorocky/blog/blob/master/nginx/0.常见问题.md)
+* [一次wordpress域名跳转的记录](https://github.com/hellorocky/blog/blob/master/nginx/3.一次wordpress域名跳转的记录.md)
+* [使用letsencrypt制作免费https证书](https://github.com/hellorocky/blog/blob/master/nginx/10.使用letsencrypt制作免费https证书.md)
+* [root和alias区别](https://github.com/hellorocky/blog/blob/master/nginx/5.root和alias区别.md)
+* [Nginx自定义header下划线问题](https://github.com/hellorocky/blog/blob/master/nginx/11.Nginx自定义header下划线问题.md)
+* [一次nginx配置proxy_path转发路径问题](https://github.com/hellorocky/blog/blob/master/nginx/6.一次nginx配置proxy_path转发路径问题.md)
+* [Nginx的worker_cpu_affinity详解](https://github.com/hellorocky/blog/blob/master/nginx/1.Nginx的worker_cpu_affinity详解.md)
+
 #### kvm
 
 * [kvm简单的搭建以及使用](https://github.com/hellorocky/blog/blob/master/kvm/1.kvm简单的搭建以及使用.md)
@@ -133,6 +143,7 @@
 #### linux
 
 * [文件描述符](https://github.com/hellorocky/blog/blob/master/linux/11.文件描述符.md)
+* [使用yum下载rpm安装包](https://github.com/hellorocky/blog/blob/master/linux/20.使用yum下载rpm安装包.md)
 * [Linux中find命令实战经验](https://github.com/hellorocky/blog/blob/master/linux/7.Linux中find命令实战经验.md)
 * [僵尸进程的一些理解](https://github.com/hellorocky/blog/blob/master/linux/2.僵尸进程的一些理解.md)
 * [sed命令实战总结](https://github.com/hellorocky/blog/blob/master/linux/19.sed命令实战总结.md)
@@ -152,10 +163,24 @@
 * [VNC搭建以及使用](https://github.com/hellorocky/blog/blob/master/linux/16.VNC搭建以及使用.md)
 * [线上问题排查总结](https://github.com/hellorocky/blog/blob/master/linux/4.线上问题排查总结.md)
 * [通用知识点](https://github.com/hellorocky/blog/blob/master/linux/0.通用知识点.md)
+* [解决文件删除但未释放空间的问题](https://github.com/hellorocky/blog/blob/master/linux/21.解决文件删除但未释放空间的问题.md)
 
 #### chrome
 
 * [chrome常用插件总结](https://github.com/hellorocky/blog/blob/master/chrome/1.chrome常用插件总结.md)
+
+#### prometheus
+
+* [使用Prometheus监控接口的响应时间](https://github.com/hellorocky/blog/blob/master/prometheus/2.使用Prometheus监控接口的响应时间.md)
+* [使用Prometheus监控接口QPS](https://github.com/hellorocky/blog/blob/master/prometheus/1.使用Prometheus监控接口QPS.md)
+
+#### jenkins
+
+* [通用知识点](https://github.com/hellorocky/blog/blob/master/jenkins/0.通用知识点.md)
+
+#### kubernetes
+
+* [kubectl常用总结](https://github.com/hellorocky/blog/blob/master/kubernetes/1.kubectl常用总结.md)
 
 #### django
 
@@ -173,6 +198,7 @@
 
 #### supervisor
 
+* [supervisor使用总结](https://github.com/hellorocky/blog/blob/master/supervisor/0.supervisor使用总结.md)
 * [supervisor在Ubuntu下的采坑](https://github.com/hellorocky/blog/blob/master/supervisor/1.supervisor在Ubuntu下的采坑.md)
 
 #### spring
