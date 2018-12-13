@@ -24,18 +24,28 @@
 
 * [Code_Like_a_Pythonista_Idiomatic_Python](https://github.com/hellorocky/blog/blob/master/translation/1.Code_Like_a_Pythonista_Idiomatic_Python.md)
 * [docker-in-the-real-world-at-yelp](https://github.com/hellorocky/blog/blob/master/translation/3.docker-in-the-real-world-at-yelp.md)
+* [7个可以提高微服务可用性和可伸缩性的云设计模式](https://github.com/hellorocky/blog/blob/master/translation/2.7个可以提高微服务可用性和可伸缩性的云设计模式.md)
 
 #### python
 
 * [argparse模块的常见用法](https://github.com/hellorocky/blog/blob/master/python/3.argparse模块的常见用法.md)
 * [常用的时间,日期处理方法总结](https://github.com/hellorocky/blog/blob/master/python/4.常用的时间,日期处理方法总结.md)
 * [class转换成dict实践总结](https://github.com/hellorocky/blog/blob/master/python/8.class转换成dict实践总结.md)
+* [Python实战分享](https://github.com/hellorocky/blog/blob/master/python/9.Python实战分享.md)
 * [一次supervisor的umask配置引起的问题](https://github.com/hellorocky/blog/blob/master/python/1.一次supervisor的umask配置引起的问题.md)
 * [pyflame简单使用](https://github.com/hellorocky/blog/blob/master/python/5.pyflame简单使用.md)
 * [正则表达式常用总结](https://github.com/hellorocky/blog/blob/master/python/7.正则表达式常用总结.md)
 * [通用知识点](https://github.com/hellorocky/blog/blob/master/python/0.通用知识点.md)
 * [简单的HTTP代理服务器](https://github.com/hellorocky/blog/blob/master/python/2.简单的HTTP代理服务器.md)
 * [concurrent.futures模块总结](https://github.com/hellorocky/blog/blob/master/python/6.concurrent.futures模块总结.md)
+
+#### security
+
+* [了解HTTPS系列一](https://github.com/hellorocky/blog/blob/master/security/1.了解HTTPS系列一.md)
+
+#### roadmap
+
+* [](https://github.com/hellorocky/blog/blob/master/roadmap/README.md)
 
 #### golang
 
@@ -45,10 +55,12 @@
 #### maven
 
 * [maven私服配置方法](https://github.com/hellorocky/blog/blob/master/maven/0.maven私服配置方法.md)
+* [maven使用总结](https://github.com/hellorocky/blog/blob/master/maven/1.maven使用总结.md)
 
 #### network
 
-* [dns常用命令](https://github.com/hellorocky/blog/blob/master/network/5.dns常用命令.md)
+* [常见软件的代理配置](https://github.com/hellorocky/blog/blob/master/network/11.常见软件的代理配置.md)
+* [dns简单总结](https://github.com/hellorocky/blog/blob/master/network/5.dns简单总结.md)
 * [ipset命令常见用法](https://github.com/hellorocky/blog/blob/master/network/6.ipset命令常见用法.md)
 * [iptables端口转发实战](https://github.com/hellorocky/blog/blob/master/network/1.iptables端口转发实战.md)
 * [企业网段划分经验总结](https://github.com/hellorocky/blog/blob/master/network/10.企业网段划分经验总结.md)
@@ -63,6 +75,13 @@
 
 * [postman入门](https://github.com/hellorocky/blog/blob/master/postman/1.postman入门.md)
 
+#### java
+
+* [JDK和JRE的区别是什么](https://github.com/hellorocky/blog/blob/master/java/1.JDK和JRE的区别是什么.md)
+* [](https://github.com/hellorocky/blog/blob/master/java/README.md)
+* [Java中HeapSize相关设置](https://github.com/hellorocky/blog/blob/master/java/3.Java中HeapSize相关设置.md)
+* [JavaIO总结](https://github.com/hellorocky/blog/blob/master/java/2.JavaIO总结.md)
+
 #### rabbitmq
 
 * [RabbitMQ扩容](https://github.com/hellorocky/blog/blob/master/rabbitmq/4.RabbitMQ扩容.md)
@@ -76,6 +95,7 @@
 #### life
 
 * [生活教会我](https://github.com/hellorocky/blog/blob/master/life/0.生活教会我.md)
+* [感恩一下-砥砺前行](https://github.com/hellorocky/blog/blob/master/life/13.感恩一下-砥砺前行.md)
 * [腾讯的技术价值观和技术人才修炼](https://github.com/hellorocky/blog/blob/master/life/8.腾讯的技术价值观和技术人才修炼.md)
 * [2018一下科技年会总结](https://github.com/hellorocky/blog/blob/master/life/12.2018一下科技年会总结.md)
 * [如何提升你的能力_给年轻程序员的几条建议](https://github.com/hellorocky/blog/blob/master/life/5.如何提升你的能力_给年轻程序员的几条建议.md)
@@ -120,6 +140,11 @@
 * [一次完整的ssh登陆流程是怎样的](https://github.com/hellorocky/blog/blob/master/jumpserver/1.一次完整的ssh登陆流程是怎样的.md)
 * [coco与jms之间的心跳有什么用](https://github.com/hellorocky/blog/blob/master/jumpserver/2.coco与jms之间的心跳有什么用.md)
 * [解决jms登陆ubuntu使用vim乱码的问题](https://github.com/hellorocky/blog/blob/master/jumpserver/3.解决jms登陆ubuntu使用vim乱码的问题.md)
+
+#### idea
+
+* [](https://github.com/hellorocky/blog/blob/master/idea/readme.md)
+* [如何提高自己的技术敏感性](https://github.com/hellorocky/blog/blob/master/idea/1.如何提高自己的技术敏感性.md)
 
 #### nginx
 
@@ -174,13 +199,22 @@
 * [使用Prometheus监控接口的响应时间](https://github.com/hellorocky/blog/blob/master/prometheus/2.使用Prometheus监控接口的响应时间.md)
 * [使用Prometheus监控接口QPS](https://github.com/hellorocky/blog/blob/master/prometheus/1.使用Prometheus监控接口QPS.md)
 
+#### article
+
+* [优秀工程师必备的三大思维](https://github.com/hellorocky/blog/blob/master/article/1.优秀工程师必备的三大思维.md)
+
 #### jenkins
 
 * [通用知识点](https://github.com/hellorocky/blog/blob/master/jenkins/0.通用知识点.md)
 
 #### kubernetes
 
+* [k8s-HPA简单总结](https://github.com/hellorocky/blog/blob/master/kubernetes/3.k8s-HPA简单总结.md)
 * [kubectl常用总结](https://github.com/hellorocky/blog/blob/master/kubernetes/1.kubectl常用总结.md)
+* [k8s踩坑总结](https://github.com/hellorocky/blog/blob/master/kubernetes/2.k8s踩坑总结.md)
+* [容器化的落地实践](https://github.com/hellorocky/blog/blob/master/kubernetes/4.容器化的落地实践.md)
+* [容器中获取源IP的问题总结](https://github.com/hellorocky/blog/blob/master/kubernetes/5.容器中获取源IP的问题总结.md)
+* [docker命令常用总结](https://github.com/hellorocky/blog/blob/master/kubernetes/0.docker命令常用总结.md)
 
 #### django
 
@@ -204,5 +238,9 @@
 #### spring
 
 * [spring中文乱码的问题](https://github.com/hellorocky/blog/blob/master/spring/1.spring中文乱码的问题.md)
+* [使用spring-boot-starter-mail配置ssl问题总结](https://github.com/hellorocky/blog/blob/master/spring/3.使用spring-boot-starter-mail配置ssl问题总结.md)
+* [springboot中resource相关总结](https://github.com/hellorocky/blog/blob/master/spring/5.springboot中resource相关总结.md)
+* [SpringBoot使用RabbitMQ总结](https://github.com/hellorocky/blog/blob/master/spring/6.SpringBoot使用RabbitMQ总结.md)
 * [获取请求的参数](https://github.com/hellorocky/blog/blob/master/spring/2.获取请求的参数.md)
 * [使用IEDA创建第一个springboot项目](https://github.com/hellorocky/blog/blob/master/spring/0.使用IEDA创建第一个springboot项目.md)
+* [springboot2配置prometheus监控](https://github.com/hellorocky/blog/blob/master/spring/4.springboot2配置prometheus监控.md)
