@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/basic.xml" />
+    <property name="LOG_PATH" value="/data/logs/xxx"/>
+    <property name="HISTORY_LOG_PATH" value="/data/logs/xxx/history"/>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- encoder 默认配置为PatternLayoutEncoder -->
+        <encoder>
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}][%X{sessionId}, %X{requestId}, %X{userAccount}, %X{openApiClientId}, %X{systemCode}][%thread][%X{logId}][%F:%L][%p] %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="BIZ_INFO_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/xxx.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${HISTORY_LOG_PATH}/xxx-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>90</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}][%X{sessionId}, %X{requestId}, %X{userAccount}, %X{openApiClientId}][%thread][%X{logId}][%F:%L][%p] %m%n</pattern>
+        </encoder>
+
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <appender name="BIZ_ERROR_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/xxx.wf.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${HISTORY_LOG_PATH}/xxx-%d{yyyy-MM-dd}.wf.log</fileNamePattern>
+            <maxHistory>90</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}][%X{sessionId}, %X{requestId}, %X{userAccount}][%thread][%X{logId}][%F:%L][%p] %m%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>WARN</level>
+        </filter>
+    </appender>
+
+    <!--  这个appender仅用于打印所有HTTP调用的时候的入参, 通过weblog切面控制  -->
+    <appender name="TOTAL_HTTP_REQUEST_LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/xxx.total-http-request.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${HISTORY_LOG_PATH}/http/xxx-%d{yyyy-MM-dd}.total-http-request.log</fileNamePattern>
+            <maxHistory>90</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}][%X{sessionId}, %X{requestId}, %X{userAccount}][%thread][%X{logId}][%F:%L][%p] %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <!--  这个appender仅用于打印所有RPC调用的时候的入参, 通过dubbo filter控制  -->
+    <appender name="TOTAL_RPC_REQUEST_LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/xxx.total-rpc-request.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${HISTORY_LOG_PATH}/rpc/xxx-%d{yyyy-MM-dd}.total-rpc-request.log</fileNamePattern>
+            <maxHistory>90</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}][%X{rpcRemoteIp}, %X{rpcRemoteApp}, %X{systemCode}][%thread][%F:%L][%p] %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+    <Logger name="xxx" level="INFO" additivity="false">
+        <appender-ref ref="BIZ_INFO_FILE"/>
+        <appender-ref ref="BIZ_ERROR_FILE"/>
+        <appender-ref ref="STDOUT"/>
+    </Logger>
+    <!--  入口的日志量一般比较大, 单独放到了一个文件中, 用于查找入参  -->
+    <Logger name="xxx.support.component.WebLogAspect" level="INFO" additivity="false">
+        <appender-ref ref="TOTAL_HTTP_REQUEST_LOG"/>
+    </Logger>
+
+    <Logger name="xxx.rpc.support.filter.LogFilter" level="INFO" additivity="false">
+        <appender-ref ref="TOTAL_RPC_REQUEST_LOG"/>
+    </Logger>
+
+</configuration>
