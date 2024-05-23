@@ -8,11 +8,9 @@
 DELETE /newsearch-2023.06.30
 
 ​curl -X DELETE http://192.168.1.1:9200/​​newsearch-2023.06.30
-
 ```
 
 * 通配符删除索引
-
 
 ```
 DELETE /newsearch-*
@@ -24,4 +22,15 @@ DELETE /newsearch-*
 
 ```
 By default, this parameter does not support wildcards (*) or _all. To use wildcards or _all, set the action.destructive_requires_name cluster setting to false.
+```
+
+
+
+#### 查看索引大小(按照大小倒序)
+
+```
+GET /_cat/indices?v&s=store.size:desc
+
+
+
 ```
