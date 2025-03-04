@@ -1,0 +1,128 @@
+#### `systemd`使用说明
+
+每一个通过发布系统发布的应用, 在虚拟机上都是通过`systemd`来托管的, 这里列举一些常见的systemd的使用命令, 方便排查问题, `systemd`需要在root用户或者sudo模式下使用, 应用的服务名称就是`appCode`
+
+#### 查看服务状态
+
+`systemctl status <appCode>`, 比如 :
+
+```bash
+[root@n9e-service ~]# systemctl status sre-demo-provider
+● sre-demo-provider.service - Sre Demo Provider
+   Loaded: loaded (/etc/systemd/system/sre-demo-provider.service; disabled; vendor preset: disabled)
+   Active: active (running) since 四 2022-09-01 16:27:37 CST; 17h ago
+ Main PID: 20041 (java)
+    Tasks: 27
+   Memory: 289.1M
+   CGroup: /system.slice/sre-demo-provider.service
+           └─20041 /usr/bin/java -jar -server /data/app/sre-demo-provider/sre-demo-provider.jar
+
+9月 01 16:27:38 n9e-service java[20041]: 2022-09-01 16:27:38.377  INFO 20041 --- [           main] c.d.d.DemoProviderApplication            : Starting DemoProviderA... root in /)
+9月 01 16:27:38 n9e-service java[20041]: 2022-09-01 16:27:38.391  INFO 20041 --- [           main] c.d.d.DemoProviderApplication            : No active profile set,...: "default"
+9月 01 16:27:39 n9e-service java[20041]: 2022-09-01 16:27:39.787  INFO 20041 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized wit...8085 (http)
+9月 01 16:27:39 n9e-service java[20041]: 2022-09-01 16:27:39.815  INFO 20041 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+```
+
+#### 启动/停止/重启服务
+
+```
+systemctl start/stop/restart <appCode>
+```
+
+#### 设置/取消开机自动启动
+
+```
+systemctl enable/disable <appCode>
+```
+
+#### 重新加载配置
+
+当配置文件(`xxx.service`)更新的时候需要执行这个命令, 不然没有办法正常启停
+
+```
+systemctl daemon-reload
+```
+
+
+#### 查看开机自动启动
+
+```
+systemctl list-unit-files --type=service | grep enabled
+```
+
+#### 创建服务
+
+位置`/etc/systemd/system`目录下, 文件命名格式为`<appCode>.service`
+
+极简模板如下, 不用手工操作, 只是记录备忘:
+
+```
+# 注释要单独一行, 不要写在配置后面, 会报错
+[Unit]
+Description=应用描述
+
+[Service]
+# ExecStart=/bin/java -jar -Xms2048m -Xmx2048m -Dspring.profiles.active=prod -Dserver.port=8075 <appCode>.jar
+ExecStart=绝对启动命令, 默认type是simple, 所以这里的命令不能后台执行
+Restart=on-failure # on-failure表示只会在程序非正常停止的时候重启
+# 成功退出的状态码列表, springboot的是143, 如果不写, stop以后就会显示failed, 如果写了就会显示disactive
+SuccessExitStatus=0 143 
+# 关闭的时候等待5秒, 如果还没杀死就会强制杀死
+TimeoutStopSec=5
+# 文件描述符
+LimitNOFILE=65535
+# 子进程数量
+LimitNPROC=65535 
+# 进程优先级, CPU调用优先级, 越小优先级越高, 范围为-20到19
+Nice=-20
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```
+[Unit]
+Description=应用描述
+
+[Service]
+ExecStart=/usr/bin/java -jar -server -Dspring.profiles.active=release /cicd/app/sre-zeus/zeus-site.jar
+Restart=on-failure
+SuccessExitStatus=0 143
+
+[Install]
+WantedBy=multi-user.target
+```
+
+
+#### 查看标准输出日志
+
+默认情况下,  被`systemd`托管的服务的标准输出的日志统一由`journal`来管理, 一般我们在服务重启的时候会查看服务的报错, 下面是常见的查看日志的命令
+
+```
+journalctl -n 100 -f -u sre-zeus
+```
+
+上面命令的含义是, 查看应用sre-zeus最近100行并且实时显示输出
+
+#### 修改journald的日志文件大小
+
+因为发布到虚拟机上面的时候, 每次都会执行`systemctl status xxx.service -l`, 这个命令在日志量比较大的时候是非常耗费时间的, 所以需要配置journald的配置, 减少日志保存的大小, 方法如下:
+
+修改文件`/etc/systemd/journald.conf`:
+
+```
+SystemMaxUse=200M
+RuntimeMaxUse=200M
+```
+
+重启生效:
+
+```
+systemctl restart systemd-journald
+```
+
+查看日志占用的磁盘空间:
+
+```
+journalctl --disk-usage
+```
